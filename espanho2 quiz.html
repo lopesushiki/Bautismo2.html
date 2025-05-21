@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre el Bautismo - Parte 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .question p {
+            margin: 0 0 10px;
+            font-weight: bold;
+        }
+        .options label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz sobre el Bautismo - Parte 2</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. ¿Qué significa la palabra "bautismo" según el documento?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> Inmersión, zambullir, sumergir</label>
+                <label><input type="radio" name="q1" value="b"> Rociar agua</label>
+                <label><input type="radio" name="q1" value="c"> Beber agua</label>
+                <label><input type="radio" name="q1" value="d"> Lavar las manos</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. ¿Quién tiene derecho a bautizar según Mateo 28:19?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> Solo los sacerdotes</label>
+                <label><input type="radio" name="q2" value="b"> Quien predica, cuida y discipula</label>
+                <label><input type="radio" name="q2" value="c"> Cualquier persona sin fe</label>
+                <label><input type="radio" name="q2" value="d"> Solo los apóstoles</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. Según Marcos 16:16, ¿quién puede ser bautizado?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> Cualquier persona sin fe</label>
+                <label><input type="radio" name="q3" value="b"> Solo los recién nacidos</label>
+                <label><input type="radio" name="q3" value="c"> Quien cree y expresa su fe conscientemente</label>
+                <label><input type="radio" name="q3" value="d"> Solo los líderes religiosos</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>4. ¿Qué simboliza el bautismo según la analogía del agua sin etiqueta?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> Un ritual sin importancia</label>
+                <label><input type="radio" name="q4" value="b"> Una ceremonia opcional</label>
+                <label><input type="radio" name="q4" value="c"> Un sello que confirma la decisión de seguir a Cristo</label>
+                <label><input type="radio" name="q4" value="d"> Un acto social</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>5. ¿Por qué Jesús fue bautizado, según el documento?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> Para arrepentirse de sus pecados</label>
+                <label><input type="radio" name="q5" value="b"> Para cumplir una tradición judía</label>
+                <label><input type="radio" name="q5" value="c"> Porque era obligatorio</label>
+                <label><input type="radio" name="q5" value="d"> Para obedecer a Dios y dar ejemplo</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>6. ¿Qué representa el bautismo como un "sello" según Efesios 1:13?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> Una garantía de riqueza</label>
+                <label><input type="radio" name="q6" value="b"> Una confirmación de fe con el Espíritu Santo</label>
+                <label><input type="radio" name="q6" value="c"> Un acto privado sin importancia</label>
+                <label><input type="radio" name="q6" value="d"> Una marca de exclusión</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>7. ¿Qué enseña la historia del agua sin etiqueta sobre el bautismo?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> Que el bautismo es solo un baño</label>
+                <label><input type="radio" name="q7" value="b"> Que el bautismo declara públicamente la fe en Cristo</label>
+                <label><input type="radio" name="q7" value="c"> Que no necesitamos confianza en Dios</label>
+                <label><input type="radio" name="q7" value="d"> Que el bautismo es opcional</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. ¿Qué simboliza el agua en el contexto del bautismo según Juan 4:14?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> Una bebida común</label>
+                <label><input type="radio" name="q8" value="b"> La purificación física</label>
+                <label><input type="radio" name="q8" value="c"> La vida eterna que viene de Cristo</label>
+                <label><input type="radio" name="q8" value="d"> Un ritual sin significado</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. Según Gálatas 3:26-27, ¿qué significa estar “revestidos de Cristo”?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> Seguir reglas estrictas</label>
+                <label><input type="radio" name="q9" value="b"> Pertenecer a Cristo a través del bautismo</label>
+                <label><input type="radio" name="q9" value="c"> Cambiar de apariencia externa</label>
+                <label><input type="radio" name="q9" value="d"> Evitar el compromiso con Dios</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>10. ¿Qué papel juega la confianza en el bautismo según Proverbios 3:5?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> Confiar en la iglesia sin fe en Dios</label>
+                <label><input type="radio" name="q10" value="b"> Confiar en uno mismo</label>
+                <label><input type="radio" name="q10" value="c"> Confiar en el plan de Dios para la vida</label>
+                <label><input type="radio" name="q10" value="d"> No confiar en nada</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>11. ¿Qué simboliza el agua en la Antigua Alianza según el documento?</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="a"> Riqueza material</label>
+                <label><input type="radio" name="q11" value="b"> Purificación y renovación</label>
+                <label><input type="radio" name="q11" value="c"> Un símbolo de exclusión</label>
+                <label><input type="radio" name="q11" value="d"> Un ritual sin importancia</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>12. Según 1 Pedro 2:9, ¿qué significa la “marca” de Dios en el bautismo?</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="a"> Una etiqueta física</label>
+                <label><input type="radio" name="q12" value="b"> Una señal de amor, perdón y aceptación</label>
+                <label><input type="radio" name="q12" value="c"> Un símbolo de castigo</label>
+                <label><input type="radio" name="q12" value="d"> Una marca temporal</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>13. ¿Qué transformación ocurre en el corazón durante el bautismo según 2 Corintios 5:17?</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="a"> Ninguna transformación</label>
+                <label><input type="radio" name="q13" value="b"> Una transformación externa</label>
+                <label><input type="radio" name="q13" value="c"> Convertirse en una nueva criatura en Cristo</label>
+                <label><input type="radio" name="q13" value="d"> Un cambio de tradiciones</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>14. ¿Qué rol jugó Juan el Bautista con el bautismo según el documento?</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="a"> Evitó el bautismo</label>
+                <label><input type="radio" name="q14" value="b"> Hizo del bautismo una señal de arrepentimiento y preparación</label>
+                <label><input type="radio" name="q14" value="c"> Creó un ritual nuevo sin propósito</label>
+                <label><input type="radio" name="q14" value="d"> Solo bautizó a líderes</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>15. ¿Por qué el bautismo es considerado un hito en el camino cristiano?</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="a"> Porque es una regla estricta</label>
+                <label><input type="radio" name="q15" value="b"> Porque es un acto de amor y obediencia que conecta con Jesús</label>
+                <label><input type="radio" name="q15" value="c"> Porque es solo un baño</label>
+                <label><input type="radio" name="q15" value="d"> Porque es opcional</label>
+            </div>
+        </div>
+        <button type="submit">Enviar Respuestas</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const answers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'c',
+                q4: 'c',
+                q5: 'd',
+                q6: 'b',
+                q7: 'b',
+                q8: 'c',
+                q9: 'b',
+                q10: 'c',
+                q11: 'b',
+                q12: 'b',
+                q13: 'c',
+                q14: 'b',
+                q15: 'b'
+            };
+            let correct = 0;
+            let incorrect = 0;
+            let unanswered = 0;
+
+            for (let i = 1; i <= 15; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!selected) {
+                    unanswered++;
+                } else if (selected.value === answers[`q${i}`]) {
+                    correct++;
+                } else {
+                    incorrect++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            if (unanswered > 0) {
+                resultDiv.innerHTML = `Por favor, responde todas las preguntas. Te faltan ${unanswered} pregunta(s).`;
+            } else {
+                resultDiv.innerHTML = `Resultados: <br> Aciertos: ${correct} <br> Errores: ${incorrect}`;
+            }
+        });
+    </script>
+</body>
+</html>
